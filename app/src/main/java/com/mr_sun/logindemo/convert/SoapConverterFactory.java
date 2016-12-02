@@ -16,6 +16,7 @@ import retrofit2.Retrofit;
 /**
  * Copyright (c) 2016. sun Inc. All rights reserved.
  * com.mr_sun.logindemo
+ * http://www.jianshu.com/p/6fc8c9081c64
  * 作者：Created by sfq on 2016/12/2.
  * 联系方式：
  * 功能描述：

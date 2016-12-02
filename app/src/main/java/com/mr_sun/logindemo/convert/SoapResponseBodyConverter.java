@@ -17,6 +17,7 @@ import retrofit2.Converter;
  * Copyright (c) 2016. 东华博育云有限公司 Inc. All rights reserved.
  * com.mr_sun.logindemo.convert
  * 作者：Created by sfq on 2016/12/2.
+ * http://www.jianshu.com/p/6fc8c9081c64
  * 联系方式：
  * 功能描述：
  * 修改：无

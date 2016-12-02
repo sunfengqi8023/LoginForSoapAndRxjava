@@ -112,12 +112,9 @@ public class SoapHelper extends Transport {
         } else {
             connection.setRequestProperty("Content-Type", CONTENT_TYPE_XML_CHARSET_UTF_8);
         }
-
         // this seems to cause issues so we are removing it
         //connection.setRequestProperty("Connection", "close");
         connection.setRequestProperty("Accept-Encoding", "gzip");
-
-
         // Pass the headers provided by the user along with the call
         if (headers != null) {
             for (int i = 0; i < headers.size(); i++) {
@@ -305,7 +302,6 @@ public class SoapHelper extends Transport {
     public List<Object> getParams(String method, String nameSpacre, HashMap<String, Object> properties) {
 
         List<Object> resultList = new ArrayList<>();
-
         //throws HttpResponseException, IOException, XmlPullParserException
         SoapObject rpc = new SoapObject(nameSpacre, method);
         if (properties != null) {
@@ -314,7 +310,6 @@ public class SoapHelper extends Transport {
                 rpc.addProperty(entry.getKey(), entry.getValue());
             }
         }
-
         envelope = new SoapSerializationEnvelope(SoapEnvelope.VER10);
         new MarshalBase64().register(envelope);
         envelope.bodyOut = rpc;
